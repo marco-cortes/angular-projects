@@ -1,0 +1,13 @@
+<form (ngSubmit)="f.form.valid && agregar()" #f="ngForm">
+    <div [ngClass]="negativo == '0' ? 'agregar' : 'agregar danger'">
+        <div class="agregar_contenedor">
+            <select class="agregar_tipo" name="negativo" [(ngModel)]="negativo">
+                <option value="0" selected>+</option>
+                <option value="1">-</option>
+            </select>
+            <input type="text" class="agregar_descripcion" name="nombre" [(ngModel)]="nombre" placeholder="Agregar Descripción" required>
+            <input type="number" class="agregar_valor" name="cantidad" [(ngModel)]="cantidad" placeholder="Valor" required>
+            <button class="agregar_btn"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+    </div>
+</form>

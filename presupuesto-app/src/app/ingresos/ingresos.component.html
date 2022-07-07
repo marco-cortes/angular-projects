@@ -1,0 +1,7 @@
+<div class="ingreso">
+    <h2 class="ingreso_titulo">Ingresos</h2>
+    <div class="elemento limpiarEstilos" *ngFor="let ingreso of ingresos">
+        <app-operacion [operacion]="ingreso" ></app-operacion>
+    </div>
+    
+</div>

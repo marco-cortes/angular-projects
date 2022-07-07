@@ -1,0 +1,6 @@
+<div class="egreso">
+    <h2 class="egreso_titulo">Egresos</h2>
+    <div class="elemento limpiarEstilos" *ngFor="let egreso of egresos">
+        <app-operacion [operacion]="egreso" [ingresoTotal]="ingresoTotal"></app-operacion>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="elemento_descripcion">{{operacion.nombre}}</div>
+<div class="right limpiarEstilos">
+    <div class="elemento_valor">
+        <span *ngIf="!operacion.negativo">+ </span>
+        <span *ngIf="operacion.negativo">- </span>
+        {{operacion.cantidad | currency: "MXN": "$": "1.2-2"}}
+    </div>
+    <div class="elemento_porcentaje" *ngIf="operacion.negativo">{{porcentaje() | percent}}</div>
+    <div class="elemento_eliminar">
+        <button class="elemento_eliminar--btn"><i class="ion-ios-close-outline"
+                (click)="eliminar(operacion)"></i></button>
+    </div>
+</div>

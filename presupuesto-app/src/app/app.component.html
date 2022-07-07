@@ -1,0 +1,6 @@
+<app-saldo [total]="total()" [ingreso]="totalIngresos()" [egreso]="totalEgresos()" [porcentaje]="porcentaje()"></app-saldo>
+<app-formulario></app-formulario>
+<div class="contenedor limpiarEstilos">
+    <app-ingresos [ingresos]="ingresos"></app-ingresos>
+    <app-egresos [egresos]="egresos" [ingresoTotal]="totalIngresos()"></app-egresos>
+</div>
